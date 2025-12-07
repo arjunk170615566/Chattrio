@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chattrio — Welcome</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#34B7F1; --text:#e6eef6;
+      --muted:#9fb2c8; --maxw:980px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,Roboto,system-ui,-apple-system,Segoe UI,Arial;color:var(--text);background:
+    linear-gradient(180deg,#071025 0%, #0b1220 60%);display:flex;align-items:center;justify-content:center;padding:24px}
+    .wrap{width:100%;max-width:var(--maxw);display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .hero{padding:36px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    h1{margin:0 0 12px 0;font-size:32px;line-height:1.05}
+    p.lead{margin:0 0 18px 0;color:var(--muted);font-size:15px}
+    .features{display:flex;gap:10px;flex-wrap:wrap}
+    .feat{background:rgba(255,255,255,0.02);padding:10px 12px;border-radius:10px;font-size:13px;color:var(--muted)}
+    .card{padding:24px;border-radius:14px;background:linear-gradient(180deg,#041023,#061320);box-shadow:0 12px 40px rgba(2,6,23,0.6);display:flex;flex-direction:column;gap:14px;align-items:stretch}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#006bb3);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px}
+    .muted{color:var(--muted);font-size:13px}
+    .cta{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#042033;text-decoration:none}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);text-decoration:none}
+    .small{font-size:13px;padding:8px 10px;border-radius:8px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    @media (max-width:900px){ .wrap{grid-template-columns:1fr; padding:12px} .card{order:-1} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main class="hero">
+      <h1>Chattrio — Fast, private chatting & calls</h1>
+      <p class="lead">Secure text, voice and video calls built for small teams and friends. Lightweight, realtime and simple to use.</p>
+
+      <div class="features" aria-hidden>
+        <div class="feat">Real-time messaging</div>
+        <div class="feat">Voice & video calls</div>
+        <div class="feat">Username based contacts</div>
+        <div class="feat">Block & privacy controls</div>
+      </div>
+
+      <section style="margin-top:22px;display:flex;gap:12px;align-items:center">
+        <a class="btn btn-primary" href="./index.html" title="Login to Chattrio">Login to Chattrio</a>
+        <a class="btn btn-ghost" href="./index.html" title="Create account / Signup">Create account</a>
+      </section>
+
+      <footer>
+        Tip: after clicking "Login to Chattrio" the app opens — use the in-app login/signup forms.
+      </footer>
+    </main>
+
+    <aside class="card" aria-labelledby="panel-title">
+      <div class="brand">
+        <div class="logo">C</div>
+        <div>
+          <div id="panel-title" style="font-weight:700">Welcome to Chattrio</div>
+          <div class="muted">Your lightweight calling & chat app</div>
+        </div>
+      </div>
+
+      <div style="margin-top:8px;color:var(--muted);font-size:14px">
+        Quick start:
+        <ul style="margin:8px 0 0 18px;padding:0;color:var(--muted);line-height:1.5">
+          <li>Click Login → opens the app </li>
+          <li>Sign up with email, then complete your username</li>
+          <li>Add friends by username and start chatting or calling</li>
+        </ul>
+      </div>
+
+      <div class="cta" style="margin-top:auto">
+        <a class="btn btn-primary" href="./index.html">Open App</a>
+        <a class="btn btn-ghost small" href="./index.html#signup">Sign up</a>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
